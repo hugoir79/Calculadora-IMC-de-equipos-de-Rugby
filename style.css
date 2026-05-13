@@ -268,6 +268,10 @@ nav {
 }
 
 @media (max-width: 600px) {
+
+  body {
+    padding: 10px;
+  }
  
   /* titulo principal mas pequeño en movil */
   h1 {
@@ -277,15 +281,13 @@ nav {
   /* tamaño calculadora pantalla en movil */
   .calcular {
     width: 90%;
-    padding: 20px;
-    box-sizing: border-box;
+    
   }
  
   /* tamaño formulario pantalla en movil */
   #formulario-contacto {
     width: 90%;
-    padding: 20px;
-    box-sizing: border-box;
+    
   }
  
   /* tamaño de selector de equipo en movil */
