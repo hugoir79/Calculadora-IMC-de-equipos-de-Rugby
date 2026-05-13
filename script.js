@@ -45,13 +45,14 @@ function calcularIMC() {
     window.alert('EQUIPO: ' + equipo + '\n' +
                  'Tu IMC es: ' + IMC.toFixed(2) + '\n' + 
                  'Estado: ' + estado);
+    }
  
    // esto hace que el correo verifique si esta bien 
     function validarEmail(email) {
       const regex = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
       return regex.test(email);
     }
-}
+
 
 // este es el menu funcional
 var estiloboton         = document.getElementById('estiloboton');

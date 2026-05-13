@@ -266,3 +266,37 @@ nav {
   margin: 15px auto 0 auto;
   border: 2px solid #2a6496;
 }
+
+@media (max-width: 600px) {
+ 
+  /* titulo principal mas pequeño en movil */
+  h1 {
+    font-size: 26px;
+  }
+ 
+  /* tamaño calculadora pantalla en movil */
+  .calcular {
+    width: 90%;
+  }
+ 
+  /* tamaño pantalla en movil */
+  #formulario-contacto {
+    width: 90%;
+  }
+ 
+  /* tamaño de selector de equipo en movil */
+  select#seleccion-equipo {
+    width: 90%;
+  }
+ 
+  /* fotos mas grandes en movil  */
+  .foto-pequeña {
+    width: 100px;
+  }
+ 
+  /*  logo y el boton se coloquen en filas si no caben */
+  nav {
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+}
