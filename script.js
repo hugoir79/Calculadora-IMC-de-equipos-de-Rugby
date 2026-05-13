@@ -73,3 +73,15 @@ enlaces.forEach(function (enlace) {
 function ponerGrande(imagen) {
   document.getElementById('foto-grande').src = imagen.src;
 }
+
+// Buscamos el formulario
+const formulario = document.querySelector('#formulario-contacto form');
+
+// añadimos el addEventListener que es el vigilante
+formulario.addEventListener('submit', function(event) {
+    // con el event.preventDefault hacemos que no se refresque el formulario
+    event.preventDefault();
+    
+    // alerta de que el mensaje se ha enviado
+    window.alert("Formulario enviado con éxito, quede atento a nuestra respuesta ");
+});
