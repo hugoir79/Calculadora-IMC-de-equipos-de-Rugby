@@ -7,25 +7,26 @@
   </head>
   <body>
  
+    <!--este es el menu desplegable(el codigo &#9776 es el codigo de las tres rallitas)-->
     <nav>
       <span class="logo-text">Calculador de IMC</span>
-      <button class="Boton-menu" id="btnMenu">&#9776; Menú</button>
+      <button class="Tecla-boton" id="estiloboton">&#9776; Menú</button>
     </nav>
- 
+  
     <ul class="Menu-desplegable oculto" id="menuDesplegable">
       <li><a href="#Calculadora">Calculadora</a></li>
       <li><a href="#Imagenes">Imagenes</a></li>
       <li><a href="#Formulario">Formulario</a></li>
     </ul>
  
-    <!-- TÍTULO GRANDE ARRIBA -->
+   
     <h1>Calculador de IMC</h1>
  
-    <!-- EQUIPO SELECCIONADO EN GRANDE -->
+
+    <!-- est es el desplegable para escoger el equipo que quieras -->
     <h2 id="equipo-grande"></h2>
  
-    <!-- SELECTOR DE EQUIPO -->
-    <div id="selector-seccion">
+    <div id="selector-equipo">
       <label for="seleccion-equipo">Selecciona un equipo:</label>
       <select name="seleccion-equipo" id="seleccion-equipo">
         <option value="touluse">Stade Toulusain</option>
@@ -48,7 +49,7 @@
     <br>  
 
  
-    <!-- CALCULADORA EN EL CENTRO -->
+    <!-- esta es la calculadora de IMC-->
     <div class="calcular">
       <div class="calculadora">
         <label for="altura">Altura (cm):</label>
@@ -66,9 +67,9 @@
  
     <br>
 
-       <!-- imagenes -->
+       <!-- galeria de imagenes para imagen ampliada -->
     <div id="Imagenes">
-  <h2>Galería</h2>
+  <h2>Galeria</h2>
   <img src="bayonne.png" alt="Imagen 1" class="foto-pequeña" onclick="ponerGrande(this)">
   <img src="bordeaux.png" alt="Imagen 2" class="foto-pequeña" onclick="ponerGrande(this)">
   <img src="toulouse.png" alt="Imagen 3" class="foto-pequeña" onclick="ponerGrande(this)">
@@ -76,7 +77,7 @@
   <img id="foto-grande" src="" alt="">
 </div>
  
-    <!-- FORMULARIO DE CONTACTO AL FINAL, CENTRADO -->
+    <!-- este es el formulario -->
     <div id="formulario-contacto">
       <h2>Contacto</h2>
       <form>

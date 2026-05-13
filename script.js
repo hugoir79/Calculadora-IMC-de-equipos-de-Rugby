@@ -1,21 +1,19 @@
 function calcularIMC() {
-    // 1. Obtener los valores usando parseFloat (Requisito CRÍTICO de la hoja)
-    // Se usa parseFloat porque el HTML entrega los números como texto [cite: 52]
+    // Obtener los valores 
+    // El parseFloat se utiliza para convertir texto en decimal
     let altura = parseFloat(document.getElementById('altura').value);
     let peso = parseFloat(document.getElementById('peso').value);
  
-   // 2. Obtener el equipo del select (ID: seleccion-equipo)
-    // Usamos querySelector para asegurarnos de que coja el <select> aunque haya un div con el mismo nombre
+    // Usamos querySelector para que coja el select del menu desplegable
     let lista = document.querySelector('select#seleccion-equipo');
     
     let equipo = "Sin equipo";
     if (lista && lista.options) {
-        // Cogemos el texto de la opción que tú hayas pinchado en el desplegable [cite: 40, 62]
+        // con este comando cogemos el equipo que se haya seleccionado
         equipo = lista.options[lista.selectedIndex].text;
     }
  
-    // --- ESTO ES LO QUE HACE QUE SALGA EN GRANDE EN LA WEB ---
-    // Buscamos el h2 con el id equipo-grande y le metemos el nombre del equipo [cite: 37, 50]
+    // el tituloGrande.texContext busca el equipo que selecciones para cuando hagas el calculo se ponga en grande el nombre en la web
     let tituloGrande = document.getElementById('equipo-grande');
     if (tituloGrande) {
         tituloGrande.textContent = equipo;
@@ -41,11 +39,7 @@ function calcularIMC() {
         estado = "Obesidad";
     }
  
-    // 3. Mostrar el equipo en el H2 (ID: equipo-grande) 
-    let tituloEquipo = document.getElementById('equipo-grande');
-    if (tituloEquipo) {
-        tituloEquipo.textContent = equipo;
-    }
+    
  
     // 4. Mostrar el resultado final con toFixed(2) y salto de línea \n 
     window.alert('EQUIPO: ' + equipo + '\n' +
@@ -59,11 +53,11 @@ function calcularIMC() {
     }
 }
 
-/* MENÚ HAMBURGUESA — añadido */
-var btnMenu         = document.getElementById('btnMenu');
+// este es el menu funcional
+var estiloboton         = document.getElementById('estiloboton');
 var menuDesplegable = document.getElementById('menuDesplegable');
  
-btnMenu.addEventListener('click', function () {
+estiloboton.addEventListener('click', function () {
   menuDesplegable.classList.toggle('oculto');
 });
  
@@ -74,7 +68,7 @@ enlaces.forEach(function (enlace) {
   });
 });
 
-// Al hacer clic en una foto pequeña, la pone en grande
+// galeria de imagenes ( cuando tocas la imagen se hace mas grande)
 function ponerGrande(imagen) {
   document.getElementById('foto-grande').src = imagen.src;
 }

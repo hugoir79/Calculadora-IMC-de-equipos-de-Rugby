@@ -1,4 +1,4 @@
-/* Estilos generales */
+/* pagina principal */
 body {
   background-color: #d6e8f5;
   font-family: Arial, sans-serif;
@@ -6,7 +6,7 @@ body {
   padding: 20px;
 }
 
-/* Titulo principal */
+/* titulo principal */
 h1 {
   text-align: center;
   font-size: 40px;
@@ -15,7 +15,7 @@ h1 {
 }
 
 /* Seccion selector de equipo */
-#selector-seccion {
+#selector-equipo {
   text-align: center;
   margin-bottom: 30px;
   display: flex;
@@ -23,7 +23,7 @@ h1 {
   align-items: center;
 }
 
-#selector-seccion label {
+#selector-equipo label {
   font-size: 18px;
   color: #1a3a52;
   margin-bottom: 8px;
@@ -47,7 +47,7 @@ select#seleccion-equipo {
   margin: 10px 0 20px 0;
 }
 
-/* Calculadora */
+/* calculadora */
 .calcular {
   background-color: #eaf4fb;
   width: 300px;
@@ -112,7 +112,7 @@ button:hover {
   text-align: center;
 }
 
-/* Formulario de contacto */
+/* formulario  */
 #formulario-contacto {
   width: 300px;
   margin: 0 auto 40px auto;
@@ -177,7 +177,7 @@ button:hover {
   background-color: #d6e8f5;
 }
 
-/* Barra de navegación */
+/* navegación */
 nav {
   background-color: #ffffff;
   border: 1px solid #c8dff0;
@@ -189,8 +189,8 @@ nav {
   margin-bottom: 0.5rem;
 }
 
-/* Botón menú */
-.Boton-menu {
+/* boton del menu */
+.Tecla-boton {
   display: inline-flex;
   align-items: center;
   gap: 6px;
@@ -204,11 +204,11 @@ nav {
   width: auto;
 }
 
-.Boton-menu:hover {
+.Tecla-boton:hover {
   background-color: #d6e8f5;
 }
 
-/* Lista desplegable */
+/* menu desplegable */
 .Menu-desplegable {
   list-style: none;
   margin: 0;
@@ -243,7 +243,7 @@ nav {
   background-color: #d6e8f5;
 }
 
-/* Galería */
+/* galeria de imagenes*/
 #Imagenes {
   text-align: center;
   margin-bottom: 30px;
