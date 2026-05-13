@@ -277,11 +277,15 @@ nav {
   /* tamaño calculadora pantalla en movil */
   .calcular {
     width: 90%;
+    padding: 20px;
+    box-sizing: border-box;
   }
  
-  /* tamaño pantalla en movil */
+  /* tamaño formulario pantalla en movil */
   #formulario-contacto {
     width: 90%;
+    padding: 20px;
+    box-sizing: border-box;
   }
  
   /* tamaño de selector de equipo en movil */
