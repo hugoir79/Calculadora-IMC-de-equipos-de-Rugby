@@ -1,0 +1,268 @@
+/* Estilos generales */
+body {
+  background-color: #d6e8f5;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+}
+
+/* Titulo principal */
+h1 {
+  text-align: center;
+  font-size: 40px;
+  color: #1a3a52;
+  margin-bottom: 30px;
+}
+
+/* Seccion selector de equipo */
+#selector-seccion {
+  text-align: center;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#selector-seccion label {
+  font-size: 18px;
+  color: #1a3a52;
+  margin-bottom: 8px;
+}
+
+select#seleccion-equipo {
+  display: block;
+  margin: 0 auto;
+  padding: 8px;
+  font-size: 16px;
+  width: 220px;
+  border: 2px solid #2a6496;
+  border-radius: 0;
+  background-color: #ffffff;
+}
+
+#equipo-grande {
+  text-align: center;
+  font-size: 28px;
+  color: #1a1a1a;
+  margin: 10px 0 20px 0;
+}
+
+/* Calculadora */
+.calcular {
+  background-color: #eaf4fb;
+  width: 300px;
+  margin: 0 auto 40px auto;
+  padding: 30px;
+  border: 2px solid #2a6496;
+}
+
+.calcular h1 {
+  font-size: 24px;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.calculadora {
+  margin-bottom: 15px;
+}
+
+.calculadora label {
+  display: block;
+  font-size: 15px;
+  color: #1a3a52;
+  margin-bottom: 5px;
+}
+
+.calculadora input {
+  width: 100%;
+  padding: 10px;
+  font-size: 15px;
+  border: 2px solid #2a6496;
+  border-radius: 0;
+  box-sizing: border-box;
+  background-color: #ffffff;
+}
+
+.calculadora input:focus {
+  outline: none;
+  border-color: #1a3a52;
+  background-color: #f0f8ff;
+}
+
+button {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  background-color: #2a6496;
+  color: #ffffff;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #1a3a52;
+}
+
+#resultado {
+  margin-top: 15px;
+  font-size: 16px;
+  color: #222222;
+  text-align: center;
+}
+
+/* Formulario de contacto */
+#formulario-contacto {
+  width: 300px;
+  margin: 0 auto 40px auto;
+  background-color: #eaf4fb;
+  border: 2px solid #2a6496;
+  padding: 30px;
+}
+
+#formulario-contacto h2 {
+  text-align: center;
+  margin-top: 0;
+  color: #1a3a52;
+}
+
+#formulario-contacto label {
+  font-size: 15px;
+  color: #1a3a52;
+}
+
+#formulario-contacto input[type="text"],
+#formulario-contacto input[type="email"],
+#formulario-contacto textarea {
+  width: 100%;
+  padding: 8px;
+  font-size: 14px;
+  border: 2px solid #2a6496;
+  border-radius: 0;
+  box-sizing: border-box;
+  margin-top: 4px;
+  margin-bottom: 12px;
+  background-color: #ffffff;
+}
+
+#formulario-contacto textarea {
+  resize: vertical;
+}
+
+#formulario-contacto input[type="submit"] {
+  background-color: #2a6496;
+  color: #ffffff;
+  padding: 10px 20px;
+  border: none;
+  font-size: 15px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+#formulario-contacto input[type="submit"]:hover {
+  background-color: #1a3a52;
+}
+
+#formulario-contacto input[type="reset"] {
+  background-color: #ffffff;
+  color: #2a6496;
+  padding: 10px 20px;
+  border: 2px solid #2a6496;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+#formulario-contacto input[type="reset"]:hover {
+  background-color: #d6e8f5;
+}
+
+/* Barra de navegación */
+nav {
+  background-color: #ffffff;
+  border: 1px solid #c8dff0;
+  border-radius: 8px;
+  padding: 0.6rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+
+/* Botón menú */
+.Boton-menu {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: none;
+  border: 1px solid #2a6496;
+  border-radius: 6px;
+  padding: 6px 14px;
+  font-size: 14px;
+  color: #1a3a52;
+  cursor: pointer;
+  width: auto;
+}
+
+.Boton-menu:hover {
+  background-color: #d6e8f5;
+}
+
+/* Lista desplegable */
+.Menu-desplegable {
+  list-style: none;
+  margin: 0;
+  padding: 0.25rem 0;
+  background-color: #ffffff;
+  border: 1px solid #c8dff0;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.Menu-desplegable.oculto {
+  display: none;
+}
+
+.Menu-desplegable li {
+  border-bottom: 1px solid #e8f2f9;
+}
+
+.Menu-desplegable li:last-child {
+  border-bottom: none;
+}
+
+.Menu-desplegable li a {
+  display: block;
+  padding: 10px 16px;
+  font-size: 14px;
+  color: #1a3a52;
+  text-decoration: none;
+}
+
+.Menu-desplegable li a:hover {
+  background-color: #d6e8f5;
+}
+
+/* Galería */
+#Imagenes {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.foto-pequeña {
+  width: 80px;
+  cursor: pointer;
+  margin: 5px;
+  border: 2px solid #2a6496;
+}
+
+.foto-pequeña:hover {
+  border-color: #1a3a52;
+}
+
+#foto-grande {
+  display: block;
+  width: 150px;
+  margin: 15px auto 0 auto;
+  border: 2px solid #2a6496;
+}

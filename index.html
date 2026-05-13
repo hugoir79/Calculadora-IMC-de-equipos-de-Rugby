@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Calculador de IMC</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+ 
+    <nav>
+      <span class="logo-text">Calculador de IMC</span>
+      <button class="Boton-menu" id="btnMenu">&#9776; Menú</button>
+    </nav>
+ 
+    <ul class="Menu-desplegable oculto" id="menuDesplegable">
+      <li><a href="#Calculadora">Calculadora</a></li>
+      <li><a href="#Imagenes">Imagenes</a></li>
+      <li><a href="#Formulario">Formulario</a></li>
+    </ul>
+ 
+    <!-- TÍTULO GRANDE ARRIBA -->
+    <h1>Calculador de IMC</h1>
+ 
+    <!-- EQUIPO SELECCIONADO EN GRANDE -->
+    <h2 id="equipo-grande"></h2>
+ 
+    <!-- SELECTOR DE EQUIPO -->
+    <div id="selector-seccion">
+      <label for="seleccion-equipo">Selecciona un equipo:</label>
+      <select name="seleccion-equipo" id="seleccion-equipo">
+        <option value="touluse">Stade Toulusain</option>
+        <option value="paloise">Section Paloise</option>
+        <option value="montpellier">Montpellier Hérault Rugby</option>
+        <option value="francais">Stade Français Paris</option>
+        <option value="clermont">ASM Clermont Auvergne</option>
+        <option value="bordeaux">Union Bordeaux-Bègles</option>
+        <option value="racing">Racing 92</option>
+        <option value="castres">Castres Olympique</option>
+        <option value="bayonnais">Aviron Bayonnais</option>
+        <option value="toulon">RC Toulon</option>
+        <option value="lyon">Lyon OU</option>
+        <option value="perpiñan">USA Perpignan</option>
+        <option value="vannes">RC Vannes</option>
+        <option value="rochelais">Stade Rochelais</option>
+      </select>
+    </div>
+ 
+    <br>  
+
+ 
+    <!-- CALCULADORA EN EL CENTRO -->
+    <div class="calcular">
+      <div class="calculadora">
+        <label for="altura">Altura (cm):</label>
+        <input type="number" id="altura" placeholder="Pon tu altura aquí">
+      </div>
+ 
+      <div class="calculadora">
+        <label for="peso">Peso (kg):</label>
+        <input type="number" id="peso" placeholder="Pon tu peso aquí">
+      </div>
+ 
+      <button onclick="calcularIMC()">Calcular IMC</button>
+      <div id="resultado"></div>
+    </div>
+ 
+    <br>
+
+       <!-- imagenes -->
+    <div id="Imagenes">
+  <h2>Galería</h2>
+  <img src="bayonne.png" alt="Imagen 1" class="foto-pequeña" onclick="ponerGrande(this)">
+  <img src="bordeaux.png" alt="Imagen 2" class="foto-pequeña" onclick="ponerGrande(this)">
+  <img src="toulouse.png" alt="Imagen 3" class="foto-pequeña" onclick="ponerGrande(this)">
+  <br>
+  <img id="foto-grande" src="" alt="">
+</div>
+ 
+    <!-- FORMULARIO DE CONTACTO AL FINAL, CENTRADO -->
+    <div id="formulario-contacto">
+      <h2>Contacto</h2>
+      <form>
+        <label for="fname">Nombre:</label><br>
+        <input type="text" id="fname" name="fname"><br>
+ 
+        <label for="lname">Apellidos:</label><br>
+        <input type="text" id="lname" name="lname"><br>
+ 
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email"><br>
+ 
+        <label for="mensaje">Mensaje que quieras enviar:</label><br>
+        <textarea id="mensaje" name="mensaje" rows="8" cols="20"></textarea><br>
+ 
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Restablecer">
+      </form>
+    </div>
+ 
+    <script src="script.js"></script>
+  </body>
+</html>
